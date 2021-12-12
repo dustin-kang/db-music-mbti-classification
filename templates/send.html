@@ -22,9 +22,8 @@
 
 
         <form method="POST", action="{{url_for('recv')}}">
-           <h2 style="font-family:sans-serif; color: #1DB954;"> 곡 링크 입력 :  <input type="text", name='inpute_code', placeholder="https://open.spotify.com/track/2bgTY4UwhfBYhGT4HUYStN?si=fdbf6222fa7b4c15" width="600"></h2> <br><br>
-            <h4 style="font-family:sans-serif; color: #999999;">상위 그림과 같이 Spotify Track 링크를 올바르게 입력해주시면 됩니다. <br><br></h4>
-            <input type="submit" , value='predict!' >
+            <h2 style="font-family:sans-serif; color: #1DB954;"> 곡 링크 입력 :  <input type="text", name='inpute_code', placeholder="https://open.spotify.com/track/2bgTY4UwhfBYhGT4HUYStN?si=fdbf6222fa7b4c15" width="600px" ></h2>
+            <input type="submit" , value='예측하기', style=" border-radius: 25px; padding: 15px; background-color: #1DB954;"  >
         </form>
 
         
@@ -33,7 +32,10 @@
 
     </body>
     <footer>
-        made in dongwoo dustin kang
-        Use Spotify Open Api 
+        <center>
+        <p style="font-family:sans-serif; color: #999999;">made in dongwoo dustin kang</p>
+        <p style="font-family:sans-serif; color: #999999;">Use Spotify Open API</p>
+        </center>
+
     </footer>
 </html>
