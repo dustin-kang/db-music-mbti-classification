@@ -9,13 +9,20 @@
 
         <h1 style="font-family:sans-serif; color: #1DB954;">Mbtify</h1><br><br>
         <h2 style="font-family:sans-serif; color: #1DB954;">MBTI Classification Using Track Link : Only for Spotify</h2><br>
-        <h4 style="font-family:sans-serif; color: #999999;">Mbtify를 이용하시려면 먼저 <a herf="https://www.spotify.com/kr-ko/">스포티파이</a> 계정이 있어야 합니다.</h4><br>
-        <img src='https://raw.githubusercontent.com/dustin-kang/Proj3_MusicMBTIClassfication/custom/home_2.png' alt="example">
+        <h4 style="font-family:sans-serif; color: #999999;">Mbtify를 이용하시려면 먼저  <a href='https://www.spotify.com/', style="text-decoration-line: none; color: #1DB954;">스포티파이</a> 계정이 있어야 합니다.</h4><br>
+        <img src='https://raw.githubusercontent.com/dustin-kang/Proj3_MusicMBTIClassfication/custom/templates/home_2.png' alt="방법">
+        <h4 style="font-family:sans-serif; color: #999999;">이미지가 보이지 않는다면, <a href='https://github.com/dustin-kang/Proj3_MusicMBTIClassfication/blob/custom/templates/home_2.png', style="text-decoration-line: none; color: #1DB954;">이 링크</a>를 참고 하거나 아래 Step을 밟아보세요.</h4><br>
+        <ol style="font-family:sans-serif; color: #999999;">
+            1. 스포티파이 트랙에서 오른쪽 마우스를 클릭하면 옵션이 나온다.<br><br>  
+            2. 공유하기 탭을 누릅니다.<br> <br> 
+            3. 곡 링크 복사하기를 누릅니다.<br> <br> 
+            4. 아래 입력 란에 복사한 링크를 넣고 예측을 시작합니다.<br> <br> 
+        </ol>
 
 
 
         <form method="POST", action="{{url_for('recv')}}">
-           <b style="font-family:sans-serif; color: #1DB954;"> 곡 링크 :  <input type="text", name='inpute_code', placeholder="6bQfNiqyCX7UaQSvVVGo4I" width="1000px"> <br><br>
+           <h2 style="font-family:sans-serif; color: #1DB954;"> 곡 링크 입력 :  <input type="text", name='inpute_code', placeholder="https://open.spotify.com/track/2bgTY4UwhfBYhGT4HUYStN?si=fdbf6222fa7b4c15" width="600"></h2> <br><br>
             상위 그림과 같이 Spotify Track ID를 올바르게 입력해주시면 됩니다. <br><br></b>
             <input type="submit" , value='predict!' >
         </form>
